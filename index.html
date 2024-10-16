@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script async src="index.js"></script>
+    <script src="functions.js"></script>
+    <title>Manutenção de Equipamentos Biomédicos</title>
+</head>
+<body>
+    <header class="main-header">
+        <a href="#home"><img src="images/LogoIFJF.png" alt="Logo do IF Sudeste MG"></a>
+        <nav class="main-nav">
+            <ul class="nav-list-container">
+                <li><input type="search" placeholder="Pesquisar" id="Search" onchange="pesquisar()" ></li>
+                <li class="nav-item home-active"><a href="#home">Ínicio</a></li>
+                <li class="nav-item"><a href="#cursos">Cursos</a></li>
+                <li class="nav-item"><a href="#postagens">Postagens</a></li>
+                <li class="nav-item"><a href="#institucional">Institucional</a></li>
+                <li class="nav-item"><a href="#contato">Contato</a></li>
+                <li><button onclick="trocarTema()" id="theme"><i class='bx bx-moon'></i></button></li>
+                <li><a href="login.html"><i class='bx bx-user'></i></a></li> 
+            </ul>
+        </nav>
+        <a href="#home"><img src="images/LogoProjeto.png" alt="Logo do Projeto"></a>
+    </header>
+    <main class="home section" id="home">
+        <h1>Manutenção de Equipamentos Biomédicos</h1>
+        <h2>Projeto de Extenção do IFSUDESTEMG</h2>
+        <a href="#cursos">Cursos</a>
+    </main>
+    <section class="cursos-container section" id="cursos">
+            <div class="header">
+              <div class="header-title">
+                <h2>Cursos</h2>
+              </div>
+            </div>
+            <div class="cursos-grid">
+                <div class="curso-item" >
+                <img src="images/Cirurgia.jpg" alt="Curso 1" />
+                <h3>Curso Segurança Elétrica</h3>
+                <a href="#" class="btn-curso">Inscreva-se</a>
+                </div>
+                <div class="curso-item" >
+                <img src="images/Manutenção.jpeg" alt="Curso 1" />
+                <h3>Aterramento elétrico</h3>
+                <a href="#" class="btn-curso">Inscreva-se</a>
+                </div>
+                <div class="curso-item" >
+                <img src="images/imagem ++.png" alt="Curso 1" />
+                <h3>Mais Cursos estarão disponíveis em breve</h3>
+                </div>
+          </div>
+    </section>
+    <section class="postagens-container" id="postagens">
+        <div class="header">
+          <div class="header-title">
+            <h2>Postagens</h2>
+          </div>
+        </div>
+        <div class="postagens-grid">
+          <div class="postagem-item">
+            <img src="images/oximetro-de-dedo.jpg" alt="Postagem 1" />
+            <h3>O que é o Oxímetro?</h3>
+          </div>
+          <div class="postagem-item">
+            <img src="images/bisturi_eletronico_de_alta_frequencia_bp_400_plus_emai_5648792_1_12e9f56d7ce121f698bf463ee38d5f7f.webp" alt="Postagem 2" />
+            <h3>O que é um Bisturi Elétrico?</h3>
+          </div>
+          <div class="postagem-item">
+            <img src="images/Mesa de Anestesia.jpg" alt="Postagem 2" />
+            <h3>O que é um aparelho de anestesia?</h3>
+          </div>
+        </div>
+      
+        <div class="postagens-grid hidden" id="extra-postagens">
+            <div class="postagem-item">
+                <img src="images/monitorMultiparametrico.jfif" alt="Postagem 3" />
+                <h3>O que é um Monitor Multiparamétrico</h3>
+              </div>
+        </div>
+        <div class="mostrar-mais">
+          <button id="ver-mais-btn" class="seta-btn">
+            <i class='bx bx-chevron-down'></i>
+          </button>
+        </div>
+    </section>
+    <section class="institucional-container section" id="institucional">
+        <div class="header">
+            <div class="header-title">
+              <h2>Institucional</h2>
+            </div>
+          </div>
+        <div class="institucional-content">
+          <div class="institucional-texto">
+            <p>
+              Nossa empresa está comprometida com a excelência em serviços e produtos. Temos uma história de sucesso que se 
+              baseia em nossos valores de integridade, inovação e atendimento ao cliente. Acreditamos na criação de soluções 
+              personalizadas e no relacionamento de confiança com nossos parceiros.
+            </p>
+            <p>
+              Desde a nossa fundação, temos trabalhado para superar as expectativas e entregar resultados de alta qualidade. 
+              Venha conhecer mais sobre a nossa história e como podemos contribuir para o seu sucesso.
+            </p>
+          </div>
+      
+          <div class="institucional-image">
+            <img src="images/instituto.png" alt="Institucional" />
+          </div>
+        </div>
+    </section>
+    <footer class="main-footer" >
+        <div class="footer-logo">
+            <img src="images/LogoIFJF.png" alt="Logo do IF Sudeste MG">
+        </div>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h2 id="contato">Contato</h2>
+                <p>(32) 1234-5678</p>
+                <p id="conteudo">contato@instituto.com</p>
+            </div>
+            <div class="footer-column">
+                <h2 id="conteudo">Endereço</h2>
+                <p>Rua Bernardo Mascarenhas</p>
+                <p>Juiz de Fora - MG</p>
+            </div>
+            <div class="footer-column">
+                <h2 id="conteudo">Links Úteis</h2>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#postagens">Postagens</a></li>
+                    <li><a href="#institucional">Institucional</a><li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

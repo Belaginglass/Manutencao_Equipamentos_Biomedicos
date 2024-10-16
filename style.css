@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+:root{
+    --green-color: rgb(0, 128, 0);
+    --text-color: black;
+    --dark-green-color: rgb(6, 70, 6);
+    --white-color: #ffff;
+}
+
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+    color: var(--green-color);
+  }
+  
+  .header-title h2 {
+    font-weight: bold;
+    margin-bottom: 4rem;
+    color: var(--blue-color);
+  }
+  
+  .header-title p {
+    margin: 1rem 0;
+  }
+  
+.section{
+    margin: 10vh;
+    height: 70vh;
+}
+
+/* Cabeçalho */
+.main-header {
+position: relative;
+background-color: none;
+width:100%;
+z-index: 10;
+column-gap: 0.5rem;
+padding: 0 2rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+.main-header img {
+    height: 12vh;
+}
+
+.main-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list-container li {
+    margin-left: 20px;
+    color: var(--dark-green-color);
+    font-size: 1.2rem;
+}
+
+#Search{
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 3px;
+    border-color: var(--green-color);
+}
+
+.bx-user, 
+.bx-moon {
+    font-size: 1.5rem;
+    color: var(--dark-green-color);
+    cursor: pointer;
+}
+
+.bx-user{
+    margin-left: 3rem;
+}
+
+
+#theme {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.home-active a {
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+/* Seção Home */
+
+.home{
+    background: url("images/Cirurgia.webp") no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: var(--white-color);
+}
+
+.home h1 {
+    font-size: 3rem;
+}
+
+.home h2{
+    font-size: 1.5rem;
+    
+    margin: 2vh;
+}
+
+.home a{
+    background-color: var(--dark-green-color);
+    padding: 2vh 6vh;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.home a:hover{
+    text-decoration: underline;
+}
+
+
+/* Seção Cursos */
+
+.cursos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 5vh;
+}
+
+.curso-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.curso-item img {
+    width: 100%;
+    height: 35vh;
+    border-radius: 5px;
+}
+
+.curso-item h3 {
+    color: var(--black-color);
+    margin: 2vh;
+    font-size: 24px;
+    flex-grow: 1; 
+}
+
+.curso-item .btn-curso {
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: var(--dark-green-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.curso-item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.btn-curso:hover {
+    background-color: var(--green-color); 
+}
+
+/* Seção Postagens */
+
+.postagens-container {
+    margin: 10vh;
+}
+
+.postagens-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.postagem-item {
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    border: var(--green-color) 1px solid;
+    border-radius: 5px;
+}
+
+.postagem-item img {
+    width: 100%;
+    height: 35vh;
+    border-radius: 5px;
+}
+
+.postagem-item h3 {
+    color: var(--black-color);
+    margin: 2vh;
+    font-size: 24px;
+}
+
+.postagem-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+.mostrar-mais {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.seta-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.seta-btn:hover {
+    transform: scale(1.1);
+}
+  
+/* Seção Institucional */
+
+.institucional-container{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.institucional-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .institucional-texto {
+    width: 30%; 
+    padding-right: 20px; 
+  }
+  
+  .institucional-image {
+    width: 30%; 
+  }
+  
+  .institucional-image img {
+    max-width: 100%; 
+    height: auto; 
+  }
+  
+
+
+/* Seção do footer */
+
+.main-footer {
+    background-color: rgb(161, 161, 161);
+    color: var(--text-color);
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 15vh;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-column h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--green-color);
+}
+
+.footer-column p, .footer-column ul {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-column ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+   color: var(--text-color); 
+    font-size: 14px;
+}
